@@ -23,7 +23,7 @@ export default function LoginScreen() {
         onChangeText={setPassword}
         style={styles.input}
       />
-      <Button title="Ingresar" onPress={() => router.push("/dashboard")} />
+      <Button title="Ingresar" onPress={() => router.replace("/dashboard")} />
     </View>
   );
 }
