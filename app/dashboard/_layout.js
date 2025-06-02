@@ -1,23 +1,21 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
-export default function DashboardLayout() {
+export default function Layout() {
   return (
     <Tabs>
       <Tabs.Screen
         name="inicio"
         options={{
           title: "Inicio",
-          tabBarIcon: () => <Ionicons name="home" size={20} color={"black"} />,
+          tabBarIcon: () => <Ionicons name="home" size={20} color="black" />,
         }}
       />
       <Tabs.Screen
         name="perfil"
         options={{
           title: "Perfil",
-          tabBarIcon: () => (
-            <Ionicons name="person" size={20} color={"black"} />
-          ),
+          tabBarIcon: () => <Ionicons name="person" size={20} color="black" />,
         }}
       />
       <Tabs.Screen
@@ -25,7 +23,7 @@ export default function DashboardLayout() {
         options={{
           title: "Tareas",
           tabBarIcon: () => (
-            <Ionicons name="checkmark-done" size={20} color={"black"} />
+            <Ionicons name="checkmark-done" size={20} color="black" />
           ),
         }}
       />
